@@ -13,12 +13,13 @@ $(document).ready(function () {
 
 function drawScrollBarElem(elem, marker) {
   $(document).ready(function () {
+    var heightWin = $(window).height();
     var heightElem = $("#"+elem).height();
     var offsetFromTop = document.getElementById(elem).offsetTop;
-    heightPercentage = (heightElem * scale) / heightDoc;
-    marginPercentage = (offsetFromTop * scale) / heightDoc;
-    $("."+marker).css("height", heightPercentage + "%");
-    $("."+marker).css("marginTop", marginPercentage + "%");
+    var marginScaled = offsetFromTop / heightDoc * heightWin;
+    var heightScaled = heightElem / heightDoc * heightWin;
+    $("."+marker).css("height", heightScaled);
+    $("."+marker).css("marginTop", marginScaled);
   });
 }
 
