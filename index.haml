@@ -1,0 +1,133 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %title ALTO
+    %meta{content: "A simple HTML5 Template for new projects.", name: "description"}/
+    %meta{content: "SitePoint", name: "author"}/
+    %link{href: "/favicon.ico", rel: "icon"}/
+    %link{href: "/favicon.svg", rel: "icon", type: "image/svg+xml"}/
+    %link{href: "/apple-touch-icon.png", rel: "apple-touch-icon"}/
+    %link{href: "index.css", rel: "stylesheet"}/
+  %body
+    %p.scroll-bar
+    %p.outline-scroll-marker
+    %p.header-scroll-marker
+    .navbar{ style: "text-align:center;"}
+      .col-35
+      .col-10
+        %a.nav-item{href: "index.html"} Home
+      .col-10
+        %a.nav-item{href: "index.html"} Artists
+      .col-10
+        %a.nav-item{href: "index.html"} Portal
+      .col-35
+    .container{style: "min-height: 100vh;"}
+      #hero.pb-5
+        .row
+          .col-50.square.m-1
+            #header.blue.m-1
+              UPLIFTING
+              %br
+              ARTISTS 
+              ONE 
+              .emphasis TOKEN
+              AT A TIME
+          .col-50.m-1.h-20
+            .row
+              .col-50
+                .list-item.m-1.border-blue{ href: "#outline"}
+                  %h1.m-1.center
+                    I am an
+                    %i.emphasis artist
+            .row
+              .col-50
+                .list-item.m-1.border-blue{ href: "#outline"}
+                  %h1.m-1.center
+                    I am a
+                    %i.emphasis fan
+            .row
+              .col-50
+                .list-item.m-1.border-blue{ href: "#outline"}
+                  %h1.m-1.center
+                    I am an  
+                    %i.emphasis investor
+            .row
+              .col-50
+                .list-item.m-1.border-blue{ href: "#outline"}
+                  %h1.m-1.center
+                    What is 
+                    %i.emphasis ALTO?
+      .row
+        .col-20
+        #outline.col-60.m-1.border-blue.center
+          .m-1
+            %h1 How does this work?
+            .list-item.m-1.border-blue
+              %h1.m-1
+                %i.emphasis Rocky Raccoon
+                is a killer musician low on funding
+            %p.bullet &#8226
+            .list-item.m-1.border-blue
+              %h1.m-1
+                %i.emphasis He 
+                is wanting some financial support.. outside of 
+                %i.emphasis{ style: "text-decoration: line-through" } record labels
+            %p.bullet &#8226
+            .list-item.m-1.border-blue
+              %h1.m-1
+                No one wants to see 
+                %i.emphasis Rocky 
+                succeed like 
+                %i.emphasis.underline his fans do.
+            %p.bullet &#8226
+            .list-item.m-1.border-blue
+              %h1.m-1
+                So
+                %i.emphasis Rocky
+                makes an
+                %i.emphasis.underline ALTO 
+                account
+            %p.bullet &#8226
+            .list-item.m-1.border-blue
+              %h1.m-1
+                %i.emphasis He
+                decides to make 
+                %i.emphasis.underline 1000 tokens 
+                and sell them at
+                %i.emphasis.underline $50/token
+                at launch
+            %p.bullet &#8226
+            .list-item.m-1.border-blue
+              %h1.m-1
+                With a full sale,
+                %i.emphasis Rocky
+                now has 
+                %i.emphasis.underline $50,000
+                to invest back into his music and fans
+            %p.bullet &#8226
+            %p.bullet &#8226
+            %p.bullet &#8226
+            %p.bullet &#8226
+            .list-item.m-1.border-blue
+              %h1.m-1
+                After some time, 
+                %i.emphasis Rocky's
+                token (owned by the fans) is now worth 
+                %i.emphasis.underline quadruple
+                it's original sale value
+            %p.bullet &#8226
+            .list-item.m-1.border-blue
+              %h1.m-1
+                The investments made by 
+                %i.emphasis Rocky's loyal fans
+                gave Rocky the ability to launch!
+        .col-20
+    .container.bg-black{style: "min-height: 100vh;"}
+    .container.bg-black{style: "min-height: 100vh;"}
+    .container.bg-black{style: "min-height: 100vh;"}
+    .center
+      %p alto solutions ©
+    %script{src: "node_modules/jquery/dist/jquery.min.js"}
+    %script{src: "js/index.js"}

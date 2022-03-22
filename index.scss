@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,800;1,700&display=swap');
+
+/* FONTS */
+$martel: 'Martel', serif;
+$barlow: 'Barlow', sans-serif;
+$font: $barlow;
+
+$baige: #EBEBD3;
+$orange: #F15025;
+$grey-blue: #3685B5;
+$blue: #0471A6;
+$rich-black: #061826;
+
+$prim: $rich-black;
+$secondary:$blue;
+$alt:$orange;
+
+body {
+  font-family: $font;
+  color: $prim;
+}
+
+/* COLOR STYLING */
+.bg-black { background-color: $rich-black; }
+.baige { color: $baige; }
+.blue { color: $blue; }
+.emphasis { color: $alt; }
+.show-border { border: 1px dashed $rich-black; }
+
+
+/* TEXT STYLING */
+.underline { text-decoration: underline; }
+
+/* POSITIONING */
+.m-1 { margin: 1rem; }
+.ml-1 { margin-left: 1rem; }
+.mr-1 { margin-right: 1rem; }
+.mt-1 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 1rem; }
+.p-1 { padding: 1rem; }
+.pb-3 { padding-bottom: 3rem; }
+.pb-5 { padding-bottom: 5rem; }
+.center { text-align: center; }
+.t-left { text-align: left; }
+.t-right { text-align: right; }
+.float-right { margin-left: auto; }
+.h-20 { min-height: 20rem; }
+.w-70 { width: 70%; }
+
+/* GRID STYLINGS */
+.col-10 { width: 10%; }
+.col-20 { width: 20%; }
+.col-30 { width: 30%; }
+.col-35 { width: 35%; }
+.col-40 { width: 40%; }
+.col-50 { width: 50%; }
+.col-60 { width: 60%; }
+.col-70 { width: 70%; }
+.col-80 { width: 80%; }
+.col-90 { width: 90%; }
+.col-100 { width: 100%; }
+.row { display:flex; }
+
+/* ELEMENTS */
+
+.bullet { 
+  font-size: 30px; 
+  margin: 0; 
+  color: $orange;
+}
+
+.square {
+  min-height: 20rem;
+  background-color: $rich-black;
+  border-radius: 0.5rem;
+}
+
+.border-blue {
+  border-radius: 0.5rem;
+  border: 2px solid $blue;
+}
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.scroll-bar {
+  position: fixed;
+  width: 5px;
+  border-radius: 0.5rem;
+  top: 0;
+  background: $orange;
+  opacity: 0.5;
+}
+
+.outline-scroll-marker {
+  border-radius: 0.5rem;
+  border: 1px solid $blue;
+  position: fixed;
+  width: 3px;
+  height: 5px;
+  top: 0;
+  background: transparent;
+}
+
+.header-scroll-marker {
+  border-radius: 0.5rem;
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  top: 0;
+  background: $rich-black;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+  display:flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;  
+}
+
+.nav-item {
+  color: $rich-black;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: $orange;
+  text-decoration: underline;
+}
+
+/* CUSTOM ELEMENTS (ID'd elements) */
+#outline {
+  min-height: 20rem;
+}
+
+#header {
+  text-align: right; 
+  font-size: 100px; 
+  font-weight: 800;
+}
+
+.list-item {
+  border: 3px solid $grey-blue;
+  background-color: $grey-blue;
+}
+
+.list-item:hover {
+  border-color: $alt;
+}
