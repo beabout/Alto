@@ -7,6 +7,7 @@ $(document).ready(function () {
   $('.scroll-bar').css("height", heightElem + "%");
   $(document).scroll(function () {
     var adjustedPixelsAbove = $(document).scrollTop() / heightDoc * heightWin;
+    if (adjustedPixelsAbove < 16) { adjustedPixelsAbove = 16; }
     $('.scroll-bar').css("margin-top", adjustedPixelsAbove+"px");
   });
 });

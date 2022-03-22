@@ -2,9 +2,7 @@
 %html{lang: "en"}
   = render 'metadata'
   %body
-    %p.scroll-bar
-    %p.outline-scroll-marker
-    %p.header-scroll-marker
+    = render 'scroll-bars'
     = render 'nav'
     .container{style: "min-height: 100vh;"}
       = render 'masthead'

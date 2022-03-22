@@ -126,7 +126,7 @@ body {
 
 .scroll-bar {
   position: fixed;
-  width: 9px;
+  width: 11px;
   border-radius: 0.5rem;
   top: 0;
   background: #F15025;
@@ -134,20 +134,21 @@ body {
 
 .outline-scroll-marker {
   border-radius: 0.5rem;
-  border: 2px solid #0471A6;
+  background: transparent;
   position: fixed;
-  width: 6px;
-  height: 5px;
   top: 0;
-  background: transparent; }
+  border: 2px solid #0471A6;
+  width: 8px;
+  height: 5px; }
 
 .header-scroll-marker {
   border-radius: 0.5rem;
+  background: transparent;
   position: fixed;
-  width: 9px;
-  height: 5px;
   top: 0;
-  background: #061826; }
+  border: 2px solid #061826;
+  width: 8px;
+  height: 5px; }
 
 /* NAVBAR STYLING */
 .navbar {
