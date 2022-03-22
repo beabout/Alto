@@ -1,0 +1,7 @@
+- @items = [["Home", "index.html"], ["Artists", "index.html"], ["Portal", "index.html"]]
+.navbar{ style: "text-align:center;"}
+  .col-35
+  - @items.each do |title, file|
+    .col-10
+      %a.nav-item{href: file }= title
+  .col-35

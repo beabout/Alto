@@ -126,7 +126,7 @@ body {
 
 .scroll-bar {
   position: fixed;
-  width: 5px;
+  width: 9px;
   border-radius: 0.5rem;
   top: 0;
   background: #F15025;
@@ -134,9 +134,9 @@ body {
 
 .outline-scroll-marker {
   border-radius: 0.5rem;
-  border: 1px solid #0471A6;
+  border: 2px solid #0471A6;
   position: fixed;
-  width: 3px;
+  width: 6px;
   height: 5px;
   top: 0;
   background: transparent; }
@@ -144,7 +144,7 @@ body {
 .header-scroll-marker {
   border-radius: 0.5rem;
   position: fixed;
-  width: 5px;
+  width: 9px;
   height: 5px;
   top: 0;
   background: #061826; }
@@ -158,13 +158,16 @@ body {
   margin-top: 2rem; }
 
 .nav-item {
+  font-size: 1.25rem;
   color: #061826;
   font-weight: 800;
   text-decoration: none; }
 
 .nav-item:hover {
   color: #F15025;
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #3685B5; }
 
 /* CUSTOM ELEMENTS (ID'd elements) */
 #outline {

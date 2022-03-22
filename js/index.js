@@ -6,9 +6,8 @@ $(document).ready(function () {
   var heightElem = (heightWin * scale) / heightDoc;
   $('.scroll-bar').css("height", heightElem + "%");
   $(document).scroll(function () {
-    var posScreen = $(document).scrollTop() + heightWin;
-    heightElem = (posScreen * scale) / heightDoc;
-    $('.scroll-bar').css("height", heightElem + "%");
+    var adjustedPixelsAbove = $(document).scrollTop() / heightDoc * heightWin;
+    $('.scroll-bar').css("margin-top", adjustedPixelsAbove+"px");
   });
 });
 

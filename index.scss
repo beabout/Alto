@@ -88,7 +88,7 @@ body {
 
 .scroll-bar {
   position: fixed;
-  width: 5px;
+  width: 9px;
   border-radius: 0.5rem;
   top: 0;
   background: $orange;
@@ -97,9 +97,9 @@ body {
 
 .outline-scroll-marker {
   border-radius: 0.5rem;
-  border: 1px solid $blue;
+  border: 2px solid $blue;
   position: fixed;
-  width: 3px;
+  width: 6px;
   height: 5px;
   top: 0;
   background: transparent;
@@ -108,7 +108,7 @@ body {
 .header-scroll-marker {
   border-radius: 0.5rem;
   position: fixed;
-  width: 5px;
+  width: 9px;
   height: 5px;
   top: 0;
   background: $rich-black;
@@ -124,6 +124,7 @@ body {
 }
 
 .nav-item {
+  font-size: 1.25rem;
   color: $rich-black;
   font-weight: 800;
   text-decoration: none;
@@ -132,6 +133,8 @@ body {
 .nav-item:hover {
   color: $orange;
   text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: $grey-blue;
 }
 
 /* CUSTOM ELEMENTS (ID'd elements) */
